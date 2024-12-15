@@ -1,7 +1,7 @@
 #===============================================================================================================
 # Vuila9's Indepth Loot Filter - for Path of Exile
 #===============================================================================================================
-# VERSION:  0.1.4
+# VERSION:  0.1.4 (For public use)
 # AUTHOR:   Vuila9 (modified based on V0.1.1 of NeverSink)
 
 #-------------------------+
@@ -44,7 +44,7 @@ PlayEffect Yellow Temp
 SetFontSize 40
 
 Hide
-StackSize < 50
+StackSize < 10
 BaseType == "Gold"
 
 Show
@@ -208,21 +208,21 @@ MinimapIcon 1 White Circle
 #-------------------------+
 
 Show
-Rarity >= Magic
-DropLevel >= 60
+#Rarity >= Magic
+#DropLevel >= 60
 Class "Flask"
 SetFontSize 25
 
-Hide
-Class "Flask"
+#Hide
+#Class "Flask"
 
 Show
-Rarity >= Magic
+#Rarity >= Magic
 Class "Charm"
 SetFontSize 25
 
-Hide
-Class "Charm"
+#Hide
+#Class "Charm"
 
 #-------------------------+
 #       Gears (Rare)      |
@@ -235,6 +235,7 @@ SetTextColor 233 206 75
 SetBorderColor 233 206 75
 PlayAlertSound 1 200
 PlayEffect Yellow Temp
+SetFontSize 40
 
 Show
 Class "Rings" "Amulets"
@@ -243,7 +244,7 @@ SetTextColor 233 206 75
 SetBorderColor 233 206 75
 PlayAlertSound 1 200
 PlayEffect Yellow
-SetFontSize 35
+SetFontSize 30
 
 #-------------------------+
 #      Gears (Magic)      |
@@ -252,18 +253,19 @@ SetFontSize 35
 Show
 Class "Rings" "Amulets"
 Rarity Magic
-SetFontSize 40
+SetFontSize 30
 
 #-------------------------+
 #      Gears (Normal)     |
 #-------------------------+
 
-Hide
+#Hide
+Show
 Class "Body Armour" "Helmet" "Gloves" "Boots" "Belts" "Staff" "Wand" "Sceptre" "Mace" "QuarterStaff" "Bow" "Crossbow" "Shields" "Focus" "Quiver" "Rings" "Amulets"
 Rarity Normal
 SetTextColor 200 200 200
 SetBackgroundColor 0 0 0
-SetFontSize 30
+SetFontSize 25
 
 #-------------------------+
 #           Misc          |
